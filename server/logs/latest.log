@@ -1,219 +1,375 @@
-[21Feb2025 03:53:56.725] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeserver, --fml.forgeVersion, 47.3.33, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412]
-[21Feb2025 03:53:56.728] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 21.0.5 by Termux; OS Linux arch aarch64 version 5.15.148-android13-8-29539737-abS911BXXS7CXL2
-[21Feb2025 03:53:56.819] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgeserver
-[21Feb2025 03:53:56.854] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/data/data/com.termux/files/home/pixelmon/pixelmongithub/server/libraries/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar%2365!/ Service=ModLauncher Env=SERVER
-[21Feb2025 03:53:57.056] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /data/data/com.termux/files/home/pixelmon/pixelmongithub/server/libraries/net/minecraftforge/fmlcore/1.20.1-47.3.33/fmlcore-1.20.1-47.3.33.jar is missing mods.toml file
-[21Feb2025 03:53:57.059] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /data/data/com.termux/files/home/pixelmon/pixelmongithub/server/libraries/net/minecraftforge/javafmllanguage/1.20.1-47.3.33/javafmllanguage-1.20.1-47.3.33.jar is missing mods.toml file
-[21Feb2025 03:53:57.061] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /data/data/com.termux/files/home/pixelmon/pixelmongithub/server/libraries/net/minecraftforge/lowcodelanguage/1.20.1-47.3.33/lowcodelanguage-1.20.1-47.3.33.jar is missing mods.toml file
-[21Feb2025 03:53:57.062] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /data/data/com.termux/files/home/pixelmon/pixelmongithub/server/libraries/net/minecraftforge/mclanguage/1.20.1-47.3.33/mclanguage-1.20.1-47.3.33.jar is missing mods.toml file
-[21Feb2025 03:53:57.157] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[21Feb2025 03:53:58.220] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeserver' with arguments []
-[21Feb2025 03:53:58.511] [main/WARN] [net.minecraft.SystemReport/]: Failed retrieving info for group processor
-java.lang.NoClassDefFoundError: Could not initialize class com.sun.jna.Native
-	at com.sun.jna.NativeLong.<clinit>(NativeLong.java:35) ~[jna-5.12.1.jar%2391!/:5.12.1 (b0)]
-	at oshi.util.FileUtil.readNativeLongFromBuffer(FileUtil.java:240) ~[oshi-core-6.2.2.jar%2371!/:6.2.2]
-	at oshi.driver.linux.proc.Auxv.queryAuxv(Auxv.java:59) ~[oshi-core-6.2.2.jar%2371!/:6.2.2]
-	at oshi.software.os.linux.LinuxOperatingSystem.<clinit>(LinuxOperatingSystem.java:106) ~[oshi-core-6.2.2.jar%2371!/:6.2.2]
-	at oshi.hardware.platform.linux.LinuxCentralProcessor.initProcessorCounts(LinuxCentralProcessor.java:171) ~[oshi-core-6.2.2.jar%2371!/:6.2.2]
-	at oshi.hardware.common.AbstractCentralProcessor.<init>(AbstractCentralProcessor.java:83) ~[oshi-core-6.2.2.jar%2371!/:6.2.2]
-	at oshi.hardware.platform.linux.LinuxCentralProcessor.<init>(LinuxCentralProcessor.java:71) ~[oshi-core-6.2.2.jar%2371!/:6.2.2]
-	at oshi.hardware.platform.linux.LinuxHardwareAbstractionLayer.createProcessor(LinuxHardwareAbstractionLayer.java:62) ~[oshi-core-6.2.2.jar%2371!/:6.2.2]
-	at oshi.util.Memoizer$1.get(Memoizer.java:87) ~[oshi-core-6.2.2.jar%2371!/:6.2.2]
-	at oshi.hardware.common.AbstractHardwareAbstractionLayer.getProcessor(AbstractHardwareAbstractionLayer.java:68) ~[oshi-core-6.2.2.jar%2371!/:6.2.2]
-	at net.minecraft.SystemReport.m_143569_(SystemReport.java:75) ~[server-1.20.1-20230612.114412-srg.jar%23101!/:?]
-	at net.minecraft.SystemReport.m_143516_(SystemReport.java:82) ~[server-1.20.1-20230612.114412-srg.jar%23101!/:?]
-	at net.minecraft.SystemReport.m_143535_(SystemReport.java:75) ~[server-1.20.1-20230612.114412-srg.jar%23101!/:?]
-	at net.minecraft.SystemReport.m_143564_(SystemReport.java:52) ~[server-1.20.1-20230612.114412-srg.jar%23101!/:?]
-	at net.minecraft.SystemReport.m_143516_(SystemReport.java:82) ~[server-1.20.1-20230612.114412-srg.jar%23101!/:?]
-	at net.minecraft.SystemReport.<init>(SystemReport.java:52) ~[server-1.20.1-20230612.114412-srg.jar%23101!/:?]
-	at net.minecraft.CrashReport.<init>(CrashReport.java:31) ~[server-1.20.1-20230612.114412-srg.jar%23101!/:?]
-	at net.minecraft.CrashReport.m_127529_(CrashReport.java:216) ~[server-1.20.1-20230612.114412-srg.jar%23101!/:?]
-	at net.minecraft.server.Main.main(Main.java:116) ~[server-1.20.1-20230612.114412-srg.jar%23101!/:?]
-	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
-	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
-	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:111) ~[fmlloader-1.20.1-47.3.33.jar%2369!/:?]
-	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.serverService(CommonLaunchHandler.java:103) ~[fmlloader-1.20.1-47.3.33.jar%2369!/:?]
-	at net.minecraftforge.fml.loading.targets.CommonServerLaunchHandler.lambda$makeService$0(CommonServerLaunchHandler.java:27) ~[fmlloader-1.20.1-47.3.33.jar%2369!/:?]
-	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar%2355!/:?]
-	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar%2355!/:?]
-	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar%2355!/:?]
-	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar%2355!/:?]
-	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar%2355!/:?]
-	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar%2355!/:?]
-	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar%2355!/:?]
-	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.UnsatisfiedLinkError: /data/data/com.termux/files/home/.cache/JNA/temp/jna17633900712541087303.tmp: dlopen failed: library "libc.so.6" not found: needed by /data/data/com.termux/files/home/.cache/JNA/temp/jna17633900712541087303.tmp in namespace (default) [in thread "main"]
-	at jdk.internal.loader.NativeLibraries.load(Native Method) ~[?:?]
-	at jdk.internal.loader.NativeLibraries$NativeLibraryImpl.open(NativeLibraries.java:331) ~[?:?]
-	at jdk.internal.loader.NativeLibraries.loadLibrary(NativeLibraries.java:197) ~[?:?]
-	at jdk.internal.loader.NativeLibraries.loadLibrary(NativeLibraries.java:139) ~[?:?]
-	at java.lang.ClassLoader.loadLibrary(ClassLoader.java:2418) ~[?:?]
-	at java.lang.Runtime.load0(Runtime.java:852) ~[?:?]
-	at java.lang.System.load(System.java:2025) ~[?:?]
-	at com.sun.jna.Native.loadNativeDispatchLibraryFromClasspath(Native.java:1045) ~[jna-5.12.1.jar%2391!/:5.12.1 (b0)]
-	at com.sun.jna.Native.loadNativeDispatchLibrary(Native.java:1015) ~[jna-5.12.1.jar%2391!/:5.12.1 (b0)]
-	at com.sun.jna.Native.<clinit>(Native.java:221) ~[jna-5.12.1.jar%2391!/:5.12.1 (b0)]
-	at com.sun.jna.platform.linux.Udev.<clinit>(Udev.java:37) ~[jna-platform-5.12.1.jar%2392!/:5.12.1 (b0)]
-	at oshi.software.os.linux.LinuxOperatingSystem.<clinit>(LinuxOperatingSystem.java:93) ~[oshi-core-6.2.2.jar%2371!/:6.2.2]
-	... 28 more
-[21Feb2025 03:53:58.541] [main/WARN] [net.minecraft.SystemReport/]: Failed retrieving info for group memory
-java.lang.NoClassDefFoundError: Could not initialize class oshi.software.os.linux.LinuxOperatingSystem
-	at oshi.hardware.platform.linux.LinuxGlobalMemory.<clinit>(LinuxGlobalMemory.java:47) ~[oshi-core-6.2.2.jar%2371!/:6.2.2]
-	at oshi.hardware.platform.linux.LinuxHardwareAbstractionLayer.createMemory(LinuxHardwareAbstractionLayer.java:57) ~[oshi-core-6.2.2.jar%2371!/:6.2.2]
-	at oshi.util.Memoizer$1.get(Memoizer.java:87) ~[oshi-core-6.2.2.jar%2371!/:6.2.2]
-	at oshi.hardware.common.AbstractHardwareAbstractionLayer.getMemory(AbstractHardwareAbstractionLayer.java:80) ~[oshi-core-6.2.2.jar%2371!/:6.2.2]
-	at net.minecraft.SystemReport.m_143545_(SystemReport.java:77) ~[server-1.20.1-20230612.114412-srg.jar%23101!/:?]
-	at net.minecraft.SystemReport.m_143516_(SystemReport.java:82) ~[server-1.20.1-20230612.114412-srg.jar%23101!/:?]
-	at net.minecraft.SystemReport.m_143535_(SystemReport.java:77) ~[server-1.20.1-20230612.114412-srg.jar%23101!/:?]
-	at net.minecraft.SystemReport.m_143564_(SystemReport.java:52) ~[server-1.20.1-20230612.114412-srg.jar%23101!/:?]
-	at net.minecraft.SystemReport.m_143516_(SystemReport.java:82) ~[server-1.20.1-20230612.114412-srg.jar%23101!/:?]
-	at net.minecraft.SystemReport.<init>(SystemReport.java:52) ~[server-1.20.1-20230612.114412-srg.jar%23101!/:?]
-	at net.minecraft.CrashReport.<init>(CrashReport.java:31) ~[server-1.20.1-20230612.114412-srg.jar%23101!/:?]
-	at net.minecraft.CrashReport.m_127529_(CrashReport.java:216) ~[server-1.20.1-20230612.114412-srg.jar%23101!/:?]
-	at net.minecraft.server.Main.main(Main.java:116) ~[server-1.20.1-20230612.114412-srg.jar%23101!/:?]
-	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
-	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
-	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:111) ~[fmlloader-1.20.1-47.3.33.jar%2369!/:?]
-	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.serverService(CommonLaunchHandler.java:103) ~[fmlloader-1.20.1-47.3.33.jar%2369!/:?]
-	at net.minecraftforge.fml.loading.targets.CommonServerLaunchHandler.lambda$makeService$0(CommonServerLaunchHandler.java:27) ~[fmlloader-1.20.1-47.3.33.jar%2369!/:?]
-	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar%2355!/:?]
-	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar%2355!/:?]
-	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar%2355!/:?]
-	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar%2355!/:?]
-	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar%2355!/:?]
-	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar%2355!/:?]
-	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar%2355!/:?]
-	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoClassDefFoundError: Could not initialize class com.sun.jna.Native [in thread "main"]
-	at com.sun.jna.NativeLong.<clinit>(NativeLong.java:35) ~[jna-5.12.1.jar%2391!/:5.12.1 (b0)]
-	at oshi.util.FileUtil.readNativeLongFromBuffer(FileUtil.java:240) ~[oshi-core-6.2.2.jar%2371!/:6.2.2]
-	at oshi.driver.linux.proc.Auxv.queryAuxv(Auxv.java:59) ~[oshi-core-6.2.2.jar%2371!/:6.2.2]
-	at oshi.software.os.linux.LinuxOperatingSystem.<clinit>(LinuxOperatingSystem.java:106) ~[oshi-core-6.2.2.jar%2371!/:6.2.2]
-	at oshi.hardware.platform.linux.LinuxCentralProcessor.initProcessorCounts(LinuxCentralProcessor.java:171) ~[oshi-core-6.2.2.jar%2371!/:6.2.2]
-	at oshi.hardware.common.AbstractCentralProcessor.<init>(AbstractCentralProcessor.java:83) ~[oshi-core-6.2.2.jar%2371!/:6.2.2]
-	at oshi.hardware.platform.linux.LinuxCentralProcessor.<init>(LinuxCentralProcessor.java:71) ~[oshi-core-6.2.2.jar%2371!/:6.2.2]
-	at oshi.hardware.platform.linux.LinuxHardwareAbstractionLayer.createProcessor(LinuxHardwareAbstractionLayer.java:62) ~[oshi-core-6.2.2.jar%2371!/:6.2.2]
-	at oshi.util.Memoizer$1.get(Memoizer.java:87) ~[oshi-core-6.2.2.jar%2371!/:6.2.2]
-	at oshi.hardware.common.AbstractHardwareAbstractionLayer.getProcessor(AbstractHardwareAbstractionLayer.java:68) ~[oshi-core-6.2.2.jar%2371!/:6.2.2]
-	at net.minecraft.SystemReport.m_143569_(SystemReport.java:75) ~[server-1.20.1-20230612.114412-srg.jar%23101!/:?]
-	at net.minecraft.SystemReport.m_143516_(SystemReport.java:82) ~[server-1.20.1-20230612.114412-srg.jar%23101!/:?]
-	at net.minecraft.SystemReport.m_143535_(SystemReport.java:75) ~[server-1.20.1-20230612.114412-srg.jar%23101!/:?]
-	... 19 more
-[21Feb2025 03:54:03.312] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.3.33, for MC 1.20.1 with MCP 20230612.114412
-[21Feb2025 03:54:03.315] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.3.33 Initialized
-[21Feb2025 03:54:04.088] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
-[21Feb2025 03:54:04.795] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: AHEAD Current: 47.3.33 Target: null
-[21Feb2025 03:54:04.956] [main/ERROR] [net.minecraft.server.dedicated.Settings/]: Failed to load properties from file: server.properties
-java.nio.file.NoSuchFileException: server.properties
-	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:92) ~[?:?]
-	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106) ~[?:?]
-	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111) ~[?:?]
-	at sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:261) ~[?:?]
-	at java.nio.file.Files.newByteChannel(Files.java:379) ~[?:?]
-	at java.nio.file.Files.newByteChannel(Files.java:431) ~[?:?]
-	at java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420) ~[?:?]
-	at java.nio.file.Files.newInputStream(Files.java:159) ~[?:?]
-	at net.minecraft.server.dedicated.Settings.m_139839_(Settings.java:36) ~[server-1.20.1-20230612.114412-srg.jar%23101!/:?]
-	at net.minecraft.server.dedicated.DedicatedServerProperties.m_180929_(DedicatedServerProperties.java:137) ~[server-1.20.1-20230612.114412-srg.jar%23101!/:?]
-	at net.minecraft.server.dedicated.DedicatedServerSettings.<init>(DedicatedServerSettings.java:12) ~[server-1.20.1-20230612.114412-srg.jar%23101!/:?]
-	at net.minecraft.server.Main.main(Main.java:126) ~[server-1.20.1-20230612.114412-srg.jar%23101!/:?]
-	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
-	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
-	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:111) ~[fmlloader-1.20.1-47.3.33.jar%2369!/:?]
-	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.serverService(CommonLaunchHandler.java:103) ~[fmlloader-1.20.1-47.3.33.jar%2369!/:?]
-	at net.minecraftforge.fml.loading.targets.CommonServerLaunchHandler.lambda$makeService$0(CommonServerLaunchHandler.java:27) ~[fmlloader-1.20.1-47.3.33.jar%2369!/:?]
-	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar%2355!/:?]
-	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar%2355!/:?]
-	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar%2355!/:?]
-	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar%2355!/:?]
-	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar%2355!/:?]
-	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar%2355!/:?]
-	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar%2355!/:?]
-	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[21Feb2025 03:54:05.010] [main/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[21Feb2025 03:54:05.060] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/data/data/com.termux/files/home/pixelmon/pixelmongithub/server/libraries/net/minecraft/server/1.20.1-20230612.114412/server-1.20.1-20230612.114412-srg.jar%23101!/assets/.mcassetsroot' uses unexpected schema
-[21Feb2025 03:54:05.061] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/data/data/com.termux/files/home/pixelmon/pixelmongithub/server/libraries/net/minecraft/server/1.20.1-20230612.114412/server-1.20.1-20230612.114412-srg.jar%23101!/data/.mcassetsroot' uses unexpected schema
-[21Feb2025 03:54:06.694] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 7 recipes
-[21Feb2025 03:54:06.794] [main/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 1271 advancements
-[21Feb2025 03:54:07.236] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting minecraft server version 1.20.1
-[21Feb2025 03:54:07.237] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Loading properties
-[21Feb2025 03:54:07.237] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Default game type: SURVIVAL
-[21Feb2025 03:54:07.238] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
-[21Feb2025 03:54:07.300] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting Minecraft server on *:25565
-[21Feb2025 03:54:07.326] [Server thread/INFO] [net.minecraft.server.network.ServerConnectionListener/]: Using default channel type
-[21Feb2025 03:54:07.446] [Server thread/WARN] [io.netty.util.internal.MacAddressUtil/]: Failed to find a usable hardware address from the network interfaces; using random bytes: 88:e8:21:c9:65:60:32:9b
-[21Feb2025 03:54:07.538] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file ./world/serverconfig/forge-server.toml is not correct. Correcting
-[21Feb2025 03:54:07.540] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server was corrected from null to its default, SimpleCommentedConfig:{}. 
-[21Feb2025 03:54:07.541] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.removeErroringBlockEntities was corrected from null to its default, false. 
-[21Feb2025 03:54:07.541] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.removeErroringEntities was corrected from null to its default, false. 
-[21Feb2025 03:54:07.541] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.fullBoundingBoxLadders was corrected from null to its default, false. 
-[21Feb2025 03:54:07.542] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.zombieBaseSummonChance was corrected from null to its default, 0.1. 
-[21Feb2025 03:54:07.542] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.zombieBabyChance was corrected from null to its default, 0.05. 
-[21Feb2025 03:54:07.543] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.permissionHandler was corrected from null to its default, forge:default_handler. 
-[21Feb2025 03:54:07.544] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.advertiseDedicatedServerToLan was corrected from null to its default, true. 
-[21Feb2025 03:54:07.544] [Server thread/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key server.useItemWithDurationZero was corrected from null to its default, false. 
-[21Feb2025 03:54:07.581] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Preparing level "world"
-[21Feb2025 03:54:11.730] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
-[21Feb2025 03:54:12.490] [Worker-Main-7/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[21Feb2025 03:54:12.492] [Worker-Main-7/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[21Feb2025 03:54:12.767] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[21Feb2025 03:54:13.232] [Worker-Main-5/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
-[21Feb2025 03:54:13.762] [Worker-Main-4/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 1%
-[21Feb2025 03:54:14.241] [Worker-Main-7/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 2%
-[21Feb2025 03:54:14.740] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 3%
-[21Feb2025 03:54:15.239] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 5%
-[21Feb2025 03:54:15.731] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 6%
-[21Feb2025 03:54:16.236] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 9%
-[21Feb2025 03:54:16.732] [Worker-Main-4/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 11%
-[21Feb2025 03:54:17.232] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 13%
-[21Feb2025 03:54:17.739] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 15%
-[21Feb2025 03:54:18.653] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 16%
-[21Feb2025 03:54:18.736] [Worker-Main-7/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 16%
-[21Feb2025 03:54:19.289] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 19%
-[21Feb2025 03:54:19.731] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 21%
-[21Feb2025 03:54:20.241] [Worker-Main-6/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 23%
-[21Feb2025 03:54:20.732] [Worker-Main-5/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 27%
-[21Feb2025 03:54:21.250] [Worker-Main-4/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 29%
-[21Feb2025 03:54:21.731] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 32%
-[21Feb2025 03:54:22.234] [Worker-Main-6/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 34%
-[21Feb2025 03:54:22.731] [Worker-Main-7/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 37%
-[21Feb2025 03:54:23.236] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 40%
-[21Feb2025 03:54:23.733] [Worker-Main-6/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 42%
-[21Feb2025 03:54:24.231] [Worker-Main-7/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 45%
-[21Feb2025 03:54:24.737] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 48%
-[21Feb2025 03:54:25.233] [Worker-Main-4/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 51%
-[21Feb2025 03:54:25.731] [Worker-Main-4/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 54%
-[21Feb2025 03:54:26.236] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 56%
-[21Feb2025 03:54:26.747] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 57%
-[21Feb2025 03:54:27.262] [Worker-Main-4/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 58%
-[21Feb2025 03:54:27.738] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 60%
-[21Feb2025 03:54:28.231] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 62%
-[21Feb2025 03:54:28.736] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 65%
-[21Feb2025 03:54:29.232] [Worker-Main-6/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 68%
-[21Feb2025 03:54:29.742] [Worker-Main-4/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 69%
-[21Feb2025 03:54:30.233] [Worker-Main-7/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 72%
-[21Feb2025 03:54:30.739] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 75%
-[21Feb2025 03:54:31.249] [Worker-Main-5/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 78%
-[21Feb2025 03:54:31.733] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 81%
-[21Feb2025 03:54:32.237] [Worker-Main-5/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 83%
-[21Feb2025 03:54:32.732] [Worker-Main-4/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 86%
-[21Feb2025 03:54:33.232] [Worker-Main-5/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 88%
-[21Feb2025 03:54:33.734] [Worker-Main-6/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 92%
-[21Feb2025 03:54:34.241] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 95%
-[21Feb2025 03:54:34.735] [Worker-Main-6/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 98%
-[21Feb2025 03:54:34.966] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 23236 ms
-[21Feb2025 03:54:34.967] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Done (27.444s)! For help, type "help"
-[21Feb2025 03:54:35.003] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
-[21Feb2025 03:54:47.964] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Unknown or incomplete command, see below for error
-[21Feb2025 03:54:48.004] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: exit<--[HERE]
-[21Feb2025 03:54:51.008] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping the server
-[21Feb2025 03:54:51.055] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
-[21Feb2025 03:54:51.058] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
-[21Feb2025 03:54:51.058] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
-[21Feb2025 03:54:52.131] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[21Feb2025 03:54:53.962] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
-[21Feb2025 03:54:53.965] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
-[21Feb2025 03:54:54.008] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[21Feb2025 03:54:54.008] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[21Feb2025 03:54:54.009] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[21Feb2025 03:54:54.009] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[21fev.2025 01:18:29.031] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeserver, --fml.forgeVersion, 47.3.33, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412]
+[21fev.2025 01:18:29.035] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 21.0.5 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[21fev.2025 01:18:30.374] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgeserver
+[21fev.2025 01:18:30.405] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/Henrique/Videos/pixelmongithub/server/pixelmongithub/server/libraries/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar%2365!/ Service=ModLauncher Env=SERVER
+[21fev.2025 01:18:30.674] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Henrique\Videos\pixelmongithub\server\pixelmongithub\server\libraries\net\minecraftforge\fmlcore\1.20.1-47.3.33\fmlcore-1.20.1-47.3.33.jar is missing mods.toml file
+[21fev.2025 01:18:30.677] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Henrique\Videos\pixelmongithub\server\pixelmongithub\server\libraries\net\minecraftforge\javafmllanguage\1.20.1-47.3.33\javafmllanguage-1.20.1-47.3.33.jar is missing mods.toml file
+[21fev.2025 01:18:30.684] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Henrique\Videos\pixelmongithub\server\pixelmongithub\server\libraries\net\minecraftforge\lowcodelanguage\1.20.1-47.3.33\lowcodelanguage-1.20.1-47.3.33.jar is missing mods.toml file
+[21fev.2025 01:18:30.689] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Henrique\Videos\pixelmongithub\server\pixelmongithub\server\libraries\net\minecraftforge\mclanguage\1.20.1-47.3.33\mclanguage-1.20.1-47.3.33.jar is missing mods.toml file
+[21fev.2025 01:18:30.816] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 6 dependencies adding them to mods collection
+[21fev.2025 01:18:32.899] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[21fev.2025 01:18:32.936] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeserver' with arguments []
+[21fev.2025 01:18:33.007] [main/WARN] [mixin/]: Reference map 'createdeco-forge-refmap.json' for createdeco.mixins.json could not be read. If this is a development environment you can ignore this message
+[21fev.2025 01:18:33.207] [main/INFO] [ModernFix/]: Loaded configuration file for ModernFix 5.20.2+mc1.20.1: 87 options available, 0 override(s) found
+[21fev.2025 01:18:33.208] [main/INFO] [ModernFix/]: Applying Nashorn fix
+[21fev.2025 01:18:33.229] [main/INFO] [ModernFix/]: Applied Forge config corruption patch
+[21fev.2025 01:18:33.238] [main/WARN] [mixin/]: Reference map 'tfmg.refmap.json' for design_decor.mixins.json could not be read. If this is a development environment you can ignore this message
+[21fev.2025 01:18:33.276] [main/WARN] [mixin/]: Reference map 'tfmg.refmap.json' for tfmg.mixins.json could not be read. If this is a development environment you can ignore this message
+[21fev.2025 01:18:34.170] [main/WARN] [mixin/]: Error loading class: net/minecraft/client/renderer/blockentity/BlockEntityRendererProvider$Context (java.lang.ClassNotFoundException: net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider$Context)
+[21fev.2025 01:18:34.172] [main/WARN] [mixin/]: Error loading class: net/minecraft/client/renderer/blockentity/BlockEntityRendererProvider$Context (java.lang.ClassNotFoundException: net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider$Context)
+[21fev.2025 01:18:34.215] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
+[21fev.2025 01:18:36.137] [main/INFO] [net.minecraft.server.Bootstrap/]: ModernFix reached bootstrap stage (9.011 s after launch)
+[21fev.2025 01:18:36.209] [main/WARN] [mixin/]: @Final field delegatesByName:Ljava/util/Map; in modernfix-forge.mixins.json:perf.forge_registry_alloc.ForgeRegistryMixin should be final
+[21fev.2025 01:18:36.209] [main/WARN] [mixin/]: @Final field delegatesByValue:Ljava/util/Map; in modernfix-forge.mixins.json:perf.forge_registry_alloc.ForgeRegistryMixin should be final
+[21fev.2025 01:18:37.032] [main/INFO] [net.minecraft.server.Bootstrap/]: Vanilla bootstrap took 890 milliseconds
+[21fev.2025 01:18:38.550] [main/WARN] [mixin/]: Static binding violation: PRIVATE @Overwrite method m_47505_ in modernfix-common.mixins.json:perf.remove_biome_temperature_cache.BiomeMixin cannot reduce visibiliy of PUBLIC target method, visibility will be upgraded.
+[21fev.2025 01:18:38.964] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id architectury:sync_ids
+[21fev.2025 01:18:38.966] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbultimine:key_pressed
+[21fev.2025 01:18:38.970] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbultimine:mode_changed
+[21fev.2025 01:18:38.975] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbultimine:sync_config_to_server
+[21fev.2025 01:18:38.977] [modloading-worker-0/INFO] [create_better_motors/]: Hello 1.20.1 Create!
+[21fev.2025 01:18:38.982] [modloading-worker-0/INFO] [Create Deco/]: Registering items for Create Deco
+[21fev.2025 01:18:39.095] [modloading-worker-0/INFO] [Bookshelf/]: Fixing MC-151457. Crafting remainder for minecraft:pufferfish_bucket is now minecraft:bucket.
+[21fev.2025 01:18:39.095] [modloading-worker-0/INFO] [Bookshelf/]: Fixing MC-151457. Crafting remainder for minecraft:salmon_bucket is now minecraft:bucket.
+[21fev.2025 01:18:39.096] [modloading-worker-0/INFO] [Bookshelf/]: Fixing MC-151457. Crafting remainder for minecraft:cod_bucket is now minecraft:bucket.
+[21fev.2025 01:18:39.096] [modloading-worker-0/INFO] [Bookshelf/]: Fixing MC-151457. Crafting remainder for minecraft:tropical_fish_bucket is now minecraft:bucket.
+[21fev.2025 01:18:39.096] [modloading-worker-0/INFO] [Bookshelf/]: Fixing MC-151457. Crafting remainder for minecraft:axolotl_bucket is now minecraft:bucket.
+[21fev.2025 01:18:39.096] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftblibrary:edit_nbt_response
+[21fev.2025 01:18:39.096] [modloading-worker-0/INFO] [Bookshelf/]: Fixing MC-151457. Crafting remainder for minecraft:powder_snow_bucket is now minecraft:bucket.
+[21fev.2025 01:18:39.096] [modloading-worker-0/INFO] [Bookshelf/]: Fixing MC-151457. Crafting remainder for minecraft:tadpole_bucket is now minecraft:bucket.
+[21fev.2025 01:18:39.102] [modloading-worker-0/INFO] [Railways/]: Steam 'n' Rails v1.6.7 initializing! Commit hash: 0a7cc000d6c7a1419919bc3e315bc62932287eb9 on Create version: 0.5.1j on platform: Forge
+[21fev.2025 01:18:39.134] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.3.33, for MC 1.20.1 with MCP 20230612.114412
+[21fev.2025 01:18:39.134] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.3.33 Initialized
+[21fev.2025 01:18:39.136] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbteams:open_gui
+[21fev.2025 01:18:39.143] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbteams:update_settings
+[21fev.2025 01:18:39.148] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbteams:send_message
+[21fev.2025 01:18:39.155] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbteams:create_party
+[21fev.2025 01:18:39.157] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbchunks:request_map_data
+[21fev.2025 01:18:39.160] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbteams:player_gui_operation
+[21fev.2025 01:18:39.164] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbchunks:share_waypoint
+[21fev.2025 01:18:39.187] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbchunks:request_chunk_change
+[21fev.2025 01:18:39.198] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbchunks:teleport_from_map
+[21fev.2025 01:18:39.209] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbchunks:sync_tx
+[21fev.2025 01:18:39.223] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbchunks:update_force_load_expiry
+[21fev.2025 01:18:39.226] [modloading-worker-0/INFO] [dev.architectury.networking.forge.NetworkManagerImpl/]: Registering C2S receiver with id ftbchunks:server_config_request
+[21fev.2025 01:18:39.231] [modloading-worker-0/INFO] [Create Deco/]: Registering blocks for Create Deco
+[21fev.2025 01:18:40.290] [modloading-worker-0/INFO] [Railways/]: Registered bogey styles from railways
+[21fev.2025 01:18:40.535] [modloading-worker-0/INFO] [Railways/]: Registering data fixers
+[21fev.2025 01:18:40.632] [modloading-worker-0/INFO] [ModernFix/]: Bypassed Mojang DFU
+[21fev.2025 01:18:40.633] [modloading-worker-0/INFO] [ModernFix/]: Instantiating Mojang DFU
+[21fev.2025 01:18:41.262] [modloading-worker-0/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 0 Datafixer optimizations took 2 milliseconds
+[21fev.2025 01:18:41.272] [modloading-worker-0/INFO] [Railways/]: Registering tracks for Hex Casting
+[21fev.2025 01:18:41.273] [modloading-worker-0/INFO] [Railways/]: Registering tracks for Oh The Biomes You'll Go
+[21fev.2025 01:18:41.274] [modloading-worker-0/INFO] [Railways/]: Registering tracks for Blue Skies
+[21fev.2025 01:18:41.274] [modloading-worker-0/INFO] [Railways/]: Registering tracks for Twilight Forest
+[21fev.2025 01:18:41.275] [modloading-worker-0/INFO] [Railways/]: Registering tracks for Biomes O' Plenty
+[21fev.2025 01:18:41.295] [modloading-worker-0/INFO] [Railways/]: Registering tracks for Nature's Spirit
+[21fev.2025 01:18:41.296] [modloading-worker-0/INFO] [Railways/]: Registering tracks for Dreams and Desires
+[21fev.2025 01:18:41.297] [modloading-worker-0/INFO] [Railways/]: Registering tracks for Quark
+[21fev.2025 01:18:41.297] [modloading-worker-0/INFO] [Railways/]: Registering tracks for TerraFirmaCraft
+[21fev.2025 01:18:43.465] [main/INFO] [Create Deco/]: placard tooltip was null
+[21fev.2025 01:18:43.466] [main/INFO] [Create Deco/]: placard tooltip was null
+[21fev.2025 01:18:43.466] [main/INFO] [Create Deco/]: placard tooltip was null
+[21fev.2025 01:18:43.467] [main/INFO] [Create Deco/]: placard tooltip was null
+[21fev.2025 01:18:43.467] [main/INFO] [Create Deco/]: placard tooltip was null
+[21fev.2025 01:18:43.467] [main/INFO] [Create Deco/]: placard tooltip was null
+[21fev.2025 01:18:43.467] [main/INFO] [Create Deco/]: placard tooltip was null
+[21fev.2025 01:18:43.467] [main/INFO] [Create Deco/]: placard tooltip was null
+[21fev.2025 01:18:43.467] [main/INFO] [Create Deco/]: placard tooltip was null
+[21fev.2025 01:18:43.467] [main/INFO] [Create Deco/]: placard tooltip was null
+[21fev.2025 01:18:43.467] [main/INFO] [Create Deco/]: placard tooltip was null
+[21fev.2025 01:18:43.468] [main/INFO] [Create Deco/]: placard tooltip was null
+[21fev.2025 01:18:43.468] [main/INFO] [Create Deco/]: placard tooltip was null
+[21fev.2025 01:18:43.468] [main/INFO] [Create Deco/]: placard tooltip was null
+[21fev.2025 01:18:43.468] [main/INFO] [Create Deco/]: placard tooltip was null
+[21fev.2025 01:18:43.703] [main/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class net.minecraft.world.entity.item.PrimedTnt from class com.drmangotea.tfmg.items.weapons.explosives.napalm.NapalmBombEntity
+[21fev.2025 01:18:44.388] [modloading-worker-0/INFO] [net.minecraftforge.network.HandshakeHandler/FMLHANDSHAKE]: Registering forge reset packet
+[21fev.2025 01:18:44.395] [modloading-worker-0/INFO] [Pixelmon TCG/]: Loading TCG version 9.2.3
+[21fev.2025 01:18:44.397] [modloading-worker-0/INFO] [com.pixelmonmod.pixelmon.Pixelmon/]: Loading Pixelmon version 9.2.3
+[21fev.2025 01:18:44.397] [modloading-worker-0/INFO] [net.minecraftforge.network.HandshakeHandler/FMLHANDSHAKE]: Registered forge reset packet
+[21fev.2025 01:18:44.405] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [copycats] Starting version check at https://raw.githubusercontent.com/copycats-plus/copycats/multiloader/update.json
+[21fev.2025 01:18:44.442] [modloading-worker-0/INFO] [Pixelmon TCG/]: Initializing Pixelmon TCG v9.2.3
+[21fev.2025 01:18:44.616] [modloading-worker-0/INFO] [com.pixelmonmod.pixelmon.Pixelmon/]: Loaded Advancements
+[21fev.2025 01:18:44.632] [modloading-worker-0/INFO] [com.pixelmonmod.pixelmon.Pixelmon/]: Started the async storage scheduler.
+[21fev.2025 01:18:44.657] [modloading-worker-0/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.pixelmonmod.pixelmon.entities.pixelmon.AbstractBaseEntity from class com.pixelmonmod.pixelmon.api.data.DataSync
+[21fev.2025 01:18:44.658] [modloading-worker-0/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.pixelmonmod.pixelmon.entities.pixelmon.AbstractBaseEntity from class com.pixelmonmod.pixelmon.api.data.DataSync
+[21fev.2025 01:18:44.658] [modloading-worker-0/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.pixelmonmod.pixelmon.entities.pixelmon.AbstractBaseEntity from class com.pixelmonmod.pixelmon.api.data.DataSync
+[21fev.2025 01:18:44.658] [modloading-worker-0/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.pixelmonmod.pixelmon.entities.pixelmon.AbstractBaseEntity from class com.pixelmonmod.pixelmon.api.data.DataSync
+[21fev.2025 01:18:44.659] [modloading-worker-0/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.pixelmonmod.pixelmon.entities.pixelmon.AbstractBaseEntity from class com.pixelmonmod.pixelmon.api.data.DataSync
+[21fev.2025 01:18:44.659] [modloading-worker-0/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.pixelmonmod.pixelmon.entities.pixelmon.AbstractBaseEntity from class com.pixelmonmod.pixelmon.api.data.DataSync
+[21fev.2025 01:18:44.660] [modloading-worker-0/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.pixelmonmod.pixelmon.entities.pixelmon.AbstractBaseEntity from class com.pixelmonmod.pixelmon.api.data.DataSync
+[21fev.2025 01:18:44.660] [modloading-worker-0/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.pixelmonmod.pixelmon.entities.pixelmon.AbstractBaseEntity from class com.pixelmonmod.pixelmon.api.data.DataSync
+[21fev.2025 01:18:44.661] [modloading-worker-0/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.pixelmonmod.pixelmon.entities.pixelmon.AbstractBaseEntity from class com.pixelmonmod.pixelmon.api.data.DataSync
+[21fev.2025 01:18:44.661] [modloading-worker-0/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.pixelmonmod.pixelmon.entities.pixelmon.AbstractBaseEntity from class com.pixelmonmod.pixelmon.api.data.DataSync
+[21fev.2025 01:18:44.661] [modloading-worker-0/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.pixelmonmod.pixelmon.entities.pixelmon.AbstractBaseEntity from class com.pixelmonmod.pixelmon.api.data.DataSync
+[21fev.2025 01:18:44.662] [modloading-worker-0/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.pixelmonmod.pixelmon.entities.pixelmon.AbstractBaseEntity from class com.pixelmonmod.pixelmon.api.data.DataSync
+[21fev.2025 01:18:44.665] [modloading-worker-0/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.pixelmonmod.pixelmon.entities.pixelmon.AbstractBaseEntity from class com.pixelmonmod.pixelmon.api.data.DataSync
+[21fev.2025 01:18:44.666] [modloading-worker-0/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.pixelmonmod.pixelmon.entities.pixelmon.AbstractBaseEntity from class com.pixelmonmod.pixelmon.api.data.DataSync
+[21fev.2025 01:18:44.666] [modloading-worker-0/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.pixelmonmod.pixelmon.entities.pixelmon.AbstractBaseEntity from class com.pixelmonmod.pixelmon.api.data.DataSync
+[21fev.2025 01:18:44.667] [modloading-worker-0/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.pixelmonmod.pixelmon.entities.pixelmon.AbstractBaseEntity from class com.pixelmonmod.pixelmon.api.data.DataSync
+[21fev.2025 01:18:44.667] [modloading-worker-0/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.pixelmonmod.pixelmon.entities.pixelmon.AbstractBaseEntity from class com.pixelmonmod.pixelmon.api.data.DataSync
+[21fev.2025 01:18:44.668] [modloading-worker-0/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.pixelmonmod.pixelmon.entities.pixelmon.AbstractBaseEntity from class com.pixelmonmod.pixelmon.api.data.DataSync
+[21fev.2025 01:18:44.668] [modloading-worker-0/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.pixelmonmod.pixelmon.entities.pixelmon.AbstractBaseEntity from class com.pixelmonmod.pixelmon.api.data.DataSync
+[21fev.2025 01:18:44.669] [modloading-worker-0/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.pixelmonmod.pixelmon.entities.pixelmon.AbstractClientEntity from class com.pixelmonmod.pixelmon.api.data.DataSync
+[21fev.2025 01:18:44.669] [modloading-worker-0/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.pixelmonmod.pixelmon.entities.pixelmon.AbstractClientEntity from class com.pixelmonmod.pixelmon.api.data.DataSync
+[21fev.2025 01:18:44.670] [modloading-worker-0/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.pixelmonmod.pixelmon.entities.pixelmon.AbstractClientEntity from class com.pixelmonmod.pixelmon.api.data.DataSync
+[21fev.2025 01:18:44.670] [modloading-worker-0/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.pixelmonmod.pixelmon.entities.pixelmon.AbstractClientEntity from class com.pixelmonmod.pixelmon.api.data.DataSync
+[21fev.2025 01:18:44.670] [modloading-worker-0/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.pixelmonmod.pixelmon.entities.pixelmon.AbstractClientEntity from class com.pixelmonmod.pixelmon.api.data.DataSync
+[21fev.2025 01:18:44.670] [modloading-worker-0/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.pixelmonmod.pixelmon.entities.pixelmon.AbstractClientEntity from class com.pixelmonmod.pixelmon.api.data.DataSync
+[21fev.2025 01:18:44.672] [modloading-worker-0/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.pixelmonmod.pixelmon.entities.pixelmon.AbstractClientEntity from class com.pixelmonmod.pixelmon.api.data.DataSync
+[21fev.2025 01:18:44.672] [modloading-worker-0/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.pixelmonmod.pixelmon.entities.pixelmon.AbstractClientEntity from class com.pixelmonmod.pixelmon.api.data.DataSync
+[21fev.2025 01:18:44.672] [modloading-worker-0/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.pixelmonmod.pixelmon.entities.pixelmon.AbstractClientEntity from class com.pixelmonmod.pixelmon.api.data.DataSync
+[21fev.2025 01:18:44.673] [modloading-worker-0/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.pixelmonmod.pixelmon.entities.pixelmon.AbstractInteractionsEntity from class com.pixelmonmod.pixelmon.api.data.DataSync
+[21fev.2025 01:18:44.673] [modloading-worker-0/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.pixelmonmod.pixelmon.entities.pixelmon.AbstractBattleEntity from class com.pixelmonmod.pixelmon.api.data.DataSync
+[21fev.2025 01:18:44.673] [modloading-worker-0/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.pixelmonmod.pixelmon.entities.pixelmon.AbstractMovesEntity from class com.pixelmonmod.pixelmon.api.data.DataSync
+[21fev.2025 01:18:44.674] [modloading-worker-0/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.pixelmonmod.pixelmon.entities.pixelmon.AbstractMovesEntity from class com.pixelmonmod.pixelmon.api.data.DataSync
+[21fev.2025 01:18:44.698] [main/INFO] [terrablender/]: Registered region minecraft:overworld to index 0 for type OVERWORLD
+[21fev.2025 01:18:44.699] [main/INFO] [terrablender/]: Registered region minecraft:nether to index 0 for type NETHER
+[21fev.2025 01:18:44.699] [main/INFO] [terrablender/]: Registered region biomesoplenty:overworld_primary to index 1 for type OVERWORLD
+[21fev.2025 01:18:44.699] [main/INFO] [terrablender/]: Registered region biomesoplenty:overworld_secondary to index 2 for type OVERWORLD
+[21fev.2025 01:18:44.699] [main/INFO] [terrablender/]: Registered region biomesoplenty:overworld_rare to index 3 for type OVERWORLD
+[21fev.2025 01:18:44.699] [main/INFO] [terrablender/]: Registered region biomesoplenty:nether_common to index 1 for type NETHER
+[21fev.2025 01:18:44.700] [main/INFO] [terrablender/]: Registered region biomesoplenty:nether_rare to index 2 for type NETHER
+[21fev.2025 01:18:44.706] [main/INFO] [journeymap/]: Initializing Packet Registries
+[21fev.2025 01:18:44.708] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [copycats] Found status: AHEAD Current: 2.2.0+mc.1.20.1-forge Target: null
+[21fev.2025 01:18:44.708] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [flywheel] Starting version check at https://api.modrinth.com/updates/flywheel/forge_updates.json
+[21fev.2025 01:18:45.242] [modloading-worker-0/INFO] [Jade/]: Start loading plugin at snownee.jade.addon.vanilla.VanillaPlugin
+[21fev.2025 01:18:45.257] [modloading-worker-0/INFO] [Jade/]: Start loading plugin at snownee.jade.addon.universal.UniversalPlugin
+[21fev.2025 01:18:45.259] [modloading-worker-0/INFO] [Jade/]: Start loading plugin at snownee.jade.addon.core.CorePlugin
+[21fev.2025 01:18:45.261] [modloading-worker-0/INFO] [Jade/]: Start loading plugin at net.blay09.mods.waystones.compat.JadeIntegration
+[21fev.2025 01:18:45.261] [modloading-worker-0/INFO] [Jade/]: Start loading plugin at net.blay09.mods.balm.forge.compat.hudinfo.ForgeJadeModCompat
+[21fev.2025 01:18:45.367] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [flywheel] Found status: BETA Current: 0.6.11-13 Target: null
+[21fev.2025 01:18:45.367] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [clumps] Starting version check at https://updates.blamejared.com/get?n=clumps&gv=1.20.1
+[21fev.2025 01:18:45.914] [main/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[21fev.2025 01:18:46.095] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [clumps] Found status: BETA Current: 12.0.0.4 Target: 12.0.0.4
+[21fev.2025 01:18:46.095] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [journeymap] Starting version check at https://forge.curseupdate.com/32274/journeymap
+[21fev.2025 01:18:46.160] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Henrique/Videos/pixelmongithub/server/pixelmongithub/server/libraries/net/minecraft/server/1.20.1-20230612.114412/server-1.20.1-20230612.114412-srg.jar%23179!/assets/.mcassetsroot' uses unexpected schema
+[21fev.2025 01:18:46.161] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Henrique/Videos/pixelmongithub/server/pixelmongithub/server/libraries/net/minecraft/server/1.20.1-20230612.114412/server-1.20.1-20230612.114412-srg.jar%23179!/data/.mcassetsroot' uses unexpected schema
+[21fev.2025 01:18:46.560] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [journeymap] Found status: UP_TO_DATE Current: 5.10.3 Target: null
+[21fev.2025 01:18:46.560] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [botanypots] Starting version check at https://updates.blamejared.com/get?n=botanypots&gv=1.20.1
+[21fev.2025 01:18:46.826] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [botanypots] Found status: BETA Current: 13.0.40 Target: 13.0.40
+[21fev.2025 01:18:46.826] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [bookshelf] Starting version check at https://updates.blamejared.com/get?n=bookshelf&gv=1.20.1
+[21fev.2025 01:18:47.065] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [bookshelf] Found status: BETA Current: 20.2.13 Target: 20.2.13
+[21fev.2025 01:18:47.065] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[21fev.2025 01:18:47.297] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: AHEAD Current: 47.3.33 Target: null
+[21fev.2025 01:18:47.297] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [pixelmon] Starting version check at https://reforged.gg/forge/update.json
+[21fev.2025 01:18:47.994] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [pixelmon] Found status: UP_TO_DATE Current: 9.2.3 Target: null
+[21fev.2025 01:18:48.029] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [tcg] Starting version check at https://reforged.gg/forge/update.json
+[21fev.2025 01:18:48.039] [Worker-Main-16/ERROR] [net.minecraft.tags.TagLoader/]: Couldn't load tag pixelmon:spawning/drowned as it is missing following references: pixelmon:drowned_crimson (from Pixelmon-1.20.1-9.2.3-universal.jar), 
+	pixelmon:drowned_dark (from Pixelmon-1.20.1-9.2.3-universal.jar), 
+	pixelmon:drowned_warm (from Pixelmon-1.20.1-9.2.3-universal.jar)
+[21fev.2025 01:18:48.290] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [tcg] Found status: UP_TO_DATE Current: 9.2.3 Target: null
+[21fev.2025 01:18:48.890] [main/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe tfmg:colored_concrete/full_block/pink_concrete_q: com.google.gson.JsonSyntaxException: Unknown item 'tfmg:mesh_concrete'
+[21fev.2025 01:18:48.905] [main/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe design_decor:item_application/crushing_wheels/special_aluminum_cylinder: com.google.gson.JsonSyntaxException: Unknown item 'design_decor:aluminum_boiler'
+[21fev.2025 01:18:48.910] [main/WARN] [com.simibubi.create.Create/]: Your custom createaddition:rolling/electrum_ingot recipe (createaddition:rolling/electrum_ingot) specified a duration. Durations have no impact on this type of recipe.
+[21fev.2025 01:18:48.921] [main/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe tfmg:crafting/epic_party_light_bulb: com.google.gson.JsonSyntaxException: Unknown item 'tfmg:epic_party_light_bulb'
+[21fev.2025 01:18:48.922] [main/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe tfmg:colored_concrete/full_block/white_concrete_q: com.google.gson.JsonSyntaxException: Unknown item 'tfmg:mesh_concrete'
+[21fev.2025 01:18:48.925] [main/WARN] [com.simibubi.create.Create/]: Your custom tfmg:casting recipe (tfmg:casting/amogus) specified a duration. Durations have no impact on this type of recipe.
+[21fev.2025 01:18:48.926] [main/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe tfmg:colored_concrete/full_block/yellow_concrete_q: com.google.gson.JsonSyntaxException: Unknown item 'tfmg:mesh_concrete'
+[21fev.2025 01:18:48.928] [main/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe tfmg:colored_concrete/full_block/pink_concrete: com.google.gson.JsonSyntaxException: Unknown item 'tfmg:mesh_concrete'
+[21fev.2025 01:18:48.948] [main/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe tfmg:colored_concrete/full_block/gray_concrete_q: com.google.gson.JsonSyntaxException: Unknown item 'tfmg:mesh_concrete'
+[21fev.2025 01:18:48.951] [main/WARN] [com.simibubi.create.Create/]: Your custom createaddition:rolling/brass_ingot recipe (createaddition:rolling/brass_ingot) specified a duration. Durations have no impact on this type of recipe.
+[21fev.2025 01:18:48.952] [main/WARN] [com.simibubi.create.Create/]: Your custom tfmg:industrial_blasting recipe (tfmg:industrial_blasting/steel) specified a duration. Durations have no impact on this type of recipe.
+[21fev.2025 01:18:48.953] [main/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe tfmg:colored_concrete/full_block/magenta_concrete_q: com.google.gson.JsonSyntaxException: Unknown item 'tfmg:mesh_concrete'
+[21fev.2025 01:18:48.963] [main/WARN] [com.simibubi.create.Create/]: Your custom createaddition:rolling/iron_ingot recipe (createaddition:rolling/iron_ingot) specified a duration. Durations have no impact on this type of recipe.
+[21fev.2025 01:18:48.968] [main/WARN] [com.simibubi.create.Create/]: Your custom createaddition:rolling/copper_ingot recipe (createaddition:rolling/copper_ingot) specified a duration. Durations have no impact on this type of recipe.
+[21fev.2025 01:18:48.969] [main/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe tfmg:fractional_distillation/crude_oil: com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'tfmg:advanced_distillation'
+[21fev.2025 01:18:48.970] [main/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe design_decor:item_application/millstones/special_aluminum_cylinder: com.google.gson.JsonSyntaxException: Unknown item 'design_decor:aluminum_boiler'
+[21fev.2025 01:18:48.988] [main/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe tfmg:colored_concrete/full_block/black_concrete_q: com.google.gson.JsonSyntaxException: Unknown item 'tfmg:mesh_concrete'
+[21fev.2025 01:18:48.992] [main/WARN] [com.simibubi.create.Create/]: Your custom createaddition:rolling/gold_ingot recipe (createaddition:rolling/gold_ingot) specified a duration. Durations have no impact on this type of recipe.
+[21fev.2025 01:18:48.994] [main/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe tfmg:colored_concrete/full_block/cyan_concrete_q: com.google.gson.JsonSyntaxException: Unknown item 'tfmg:mesh_concrete'
+[21fev.2025 01:18:48.994] [main/WARN] [com.simibubi.create.Create/]: Your custom createaddition:rolling/straw recipe (createaddition:rolling/straw) specified a duration. Durations have no impact on this type of recipe.
+[21fev.2025 01:18:48.995] [main/WARN] [com.simibubi.create.Create/]: Your custom tfmg:polarizing recipe (tfmg:polarizing/magnetic_ingot) specified a duration. Durations have no impact on this type of recipe.
+[21fev.2025 01:18:48.997] [main/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe tfmg:crafting/cast_iron_distillation_output: com.google.gson.JsonSyntaxException: Unknown item 'tfmg:cast_iron_distillation_output'
+[21fev.2025 01:18:49.002] [main/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe tfmg:colored_concrete/full_block/green_concrete_q: com.google.gson.JsonSyntaxException: Unknown item 'tfmg:mesh_concrete'
+[21fev.2025 01:18:49.003] [main/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe tfmg:colored_concrete/full_block/light_gray_concrete_q: com.google.gson.JsonSyntaxException: Unknown item 'tfmg:mesh_concrete'
+[21fev.2025 01:18:49.018] [main/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe tfmg:crafting/glass_cable_connector: com.google.gson.JsonSyntaxException: Pattern references symbol 'G' but it's not defined in the key
+[21fev.2025 01:18:49.019] [main/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe tfmg:colored_concrete/full_block/red_concrete_q: com.google.gson.JsonSyntaxException: Unknown item 'tfmg:mesh_concrete'
+[21fev.2025 01:18:49.022] [main/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe tfmg:colored_concrete/full_block/orange_concrete_q: com.google.gson.JsonSyntaxException: Unknown item 'tfmg:mesh_concrete'
+[21fev.2025 01:18:49.022] [main/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe tfmg:mechanical_crafting/cast_iron_distillation_controller: com.google.gson.JsonSyntaxException: Unknown item 'tfmg:cast_iron_distillation_controller'
+[21fev.2025 01:18:49.023] [main/WARN] [com.simibubi.create.Create/]: Your custom createaddition:rolling/electrum_plate recipe (createaddition:rolling/electrum_plate) specified a duration. Durations have no impact on this type of recipe.
+[21fev.2025 01:18:49.034] [main/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe tfmg:colored_concrete/full_block/brown_concrete_q: com.google.gson.JsonSyntaxException: Unknown item 'tfmg:mesh_concrete'
+[21fev.2025 01:18:49.035] [main/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe tfmg:colored_concrete/full_block/light_blue_concrete_q: com.google.gson.JsonSyntaxException: Unknown item 'tfmg:mesh_concrete'
+[21fev.2025 01:18:49.036] [main/WARN] [com.simibubi.create.Create/]: Your custom tfmg:casting recipe (tfmg:casting/steel) specified a duration. Durations have no impact on this type of recipe.
+[21fev.2025 01:18:49.043] [main/WARN] [com.simibubi.create.Create/]: Your custom createaddition:rolling/copper_plate recipe (createaddition:rolling/copper_plate) specified a duration. Durations have no impact on this type of recipe.
+[21fev.2025 01:18:49.044] [main/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe tfmg:colored_concrete/full_block/lime_concrete_q: com.google.gson.JsonSyntaxException: Unknown item 'tfmg:mesh_concrete'
+[21fev.2025 01:18:49.045] [main/WARN] [com.simibubi.create.Create/]: Your custom tfmg:coking recipe (tfmg:coking/coal_coke) specified a duration. Durations have no impact on this type of recipe.
+[21fev.2025 01:18:49.045] [main/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe tfmg:colored_concrete/full_block/purple_concrete_q: com.google.gson.JsonSyntaxException: Unknown item 'tfmg:mesh_concrete'
+[21fev.2025 01:18:49.045] [main/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe tfmg:crafting/welding_machine: com.google.gson.JsonSyntaxException: Unknown item 'tfmg:welding_machine'
+[21fev.2025 01:18:49.047] [main/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe tfmg:fractional_distillation/crude_oil_sus: com.google.gson.JsonSyntaxException: Invalid or unsupported recipe type 'tfmg:advanced_distillation'
+[21fev.2025 01:18:49.048] [main/WARN] [com.simibubi.create.Create/]: Your custom createaddition:rolling/iron_plate recipe (createaddition:rolling/iron_plate) specified a duration. Durations have no impact on this type of recipe.
+[21fev.2025 01:18:49.052] [main/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe waystones:mossy_waystone_convert: com.google.gson.JsonSyntaxException: Missing type, expected to find a string
+[21fev.2025 01:18:49.053] [main/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe tfmg:mechanical_crafting/pumpjack_hammer_holder: com.google.gson.JsonSyntaxException: Unknown item 'tfmg:pumpjack_hammer_holder'
+[21fev.2025 01:18:49.055] [main/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe tfmg:colored_concrete/full_block/blue_concrete_q: com.google.gson.JsonSyntaxException: Unknown item 'tfmg:mesh_concrete'
+[21fev.2025 01:18:49.059] [main/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe tfmg:crafting/battery: com.google.gson.JsonSyntaxException: Unknown item 'tfmg:battery'
+[21fev.2025 01:18:49.065] [main/WARN] [com.simibubi.create.Create/]: Your custom createaddition:rolling/gold_plate recipe (createaddition:rolling/gold_plate) specified a duration. Durations have no impact on this type of recipe.
+[21fev.2025 01:18:49.070] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 36 recipes
+[21fev.2025 01:18:49.254] [main/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 6401 advancements
+[21fev.2025 01:18:49.674] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.675] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.683] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.687] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.687] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.693] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.699] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.705] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.706] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.710] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.726] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.732] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.747] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.754] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.764] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.770] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.770] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.771] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.776] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.781] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.784] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.792] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.793] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.795] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.795] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.796] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.797] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.802] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.803] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.805] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.805] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.810] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.816] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.818] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.834] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.839] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.840] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.843] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.844] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.852] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.854] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.855] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.862] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.866] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.868] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.871] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.871] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.873] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.880] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.880] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.881] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.883] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.883] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.888] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.893] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.901] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.904] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.905] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.905] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.908] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.908] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.919] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.922] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.924] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.939] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.944] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.954] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.959] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.967] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.968] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.971] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.974] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.978] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.979] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.980] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.980] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:49.981] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:50.012] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:50.018] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:50.022] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:50.024] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:50.032] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:50.034] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:50.036] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:50.036] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:50.039] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:50.041] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:50.052] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:50.061] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:50.068] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:50.069] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:50.069] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:50.078] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:50.084] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:50.087] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:50.094] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:50.095] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:50.098] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:50.113] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:50.116] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:50.116] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:50.116] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:50.125] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:50.126] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:50.137] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:50.141] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:50.142] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:50.145] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:50.157] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:50.159] [main/WARN] [com.pixelmonmod.pixelmon.Pixelmon/]: Attack name invalid: Tera Blast
+[21fev.2025 01:18:50.168] [main/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.pixelmonmod.pixelmon.entities.npcs.NPCEntity from class com.pixelmonmod.pixelmon.api.data.DataSync
+[21fev.2025 01:18:50.178] [main/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.pixelmonmod.pixelmon.entities.npcs.NPCEntity from class com.pixelmonmod.pixelmon.api.data.DataSync
+[21fev.2025 01:18:50.179] [main/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.pixelmonmod.pixelmon.entities.npcs.NPCEntity from class com.pixelmonmod.pixelmon.api.data.DataSync
+[21fev.2025 01:18:50.179] [main/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.pixelmonmod.pixelmon.entities.npcs.NPCEntity from class com.pixelmonmod.pixelmon.api.data.DataSync
+[21fev.2025 01:18:50.180] [main/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.pixelmonmod.pixelmon.entities.npcs.NPCEntity from class com.pixelmonmod.pixelmon.api.data.DataSync
+[21fev.2025 01:18:50.180] [main/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.pixelmonmod.pixelmon.entities.npcs.NPCEntity from class com.pixelmonmod.pixelmon.api.data.DataSync
+[21fev.2025 01:18:50.181] [main/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.pixelmonmod.pixelmon.entities.npcs.NPCEntity from class com.pixelmonmod.pixelmon.api.data.DataSync
+[21fev.2025 01:18:50.181] [main/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.pixelmonmod.pixelmon.entities.npcs.NPCTutor from class com.pixelmonmod.pixelmon.api.data.DataSync
+[21fev.2025 01:18:50.405] [main/ERROR] [com.pixelmonmod.pixelmon.Pixelmon/]: Failed to cast quest argument: any
+[21fev.2025 01:18:50.420] [main/ERROR] [com.pixelmonmod.pixelmon.Pixelmon/]: Failed to cast quest argument: any
+[21fev.2025 01:18:50.432] [main/INFO] [com.pixelmonmod.pixelmon.Pixelmon/]: Registering Better Spawner.
+[21fev.2025 01:18:50.435] [main/INFO] [com.pixelmonmod.pixelmon.Pixelmon/]: Registering trades.
+[21fev.2025 01:18:50.447] [main/INFO] [com.pixelmonmod.pixelmon.Pixelmon/]: Registering shop items.
+[21fev.2025 01:18:51.471] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting minecraft server version 1.20.1
+[21fev.2025 01:18:51.471] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Loading properties
+[21fev.2025 01:18:51.471] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Default game type: SURVIVAL
+[21fev.2025 01:18:51.471] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[21fev.2025 01:18:51.548] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting Minecraft server on *:25565
+[21fev.2025 01:18:51.569] [Server thread/INFO] [net.minecraft.server.network.ServerConnectionListener/]: Using default channel type
+[21fev.2025 01:18:51.701] [Server thread/INFO] [journeymap/]: Loading JourneyMap Forge Configs
+[21fev.2025 01:18:51.765] [Server thread/INFO] [FTB Teams/]: loaded team data: 0 known players, 0 teams total
+[21fev.2025 01:18:51.790] [Server thread/INFO] [terrablender/]: Initialized TerraBlender biomes for level stem minecraft:the_nether
+[21fev.2025 01:18:52.085] [Server thread/INFO] [terrablender/]: Initialized TerraBlender biomes for level stem minecraft:overworld
+[21fev.2025 01:18:52.086] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Preparing level "world"
+[21fev.2025 01:18:52.422] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[21fev.2025 01:18:53.192] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[21fev.2025 01:18:53.192] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[21fev.2025 01:18:53.409] [Server thread/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class net.minecraft.world.entity.player.Player from class com.pixelmonmod.pixelmon.listener.EntityPlayerExtension
+[21fev.2025 01:18:53.410] [Server thread/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class net.minecraft.world.entity.player.Player from class com.pixelmonmod.pixelmon.listener.EntityPlayerExtension
+[21fev.2025 01:18:53.410] [Server thread/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class net.minecraft.world.entity.player.Player from class com.pixelmonmod.pixelmon.listener.EntityPlayerExtension
+[21fev.2025 01:18:53.411] [Server thread/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class net.minecraft.world.entity.player.Player from class com.pixelmonmod.pixelmon.listener.EntityPlayerExtension
+[21fev.2025 01:18:53.411] [Server thread/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class net.minecraft.world.entity.player.Player from class com.pixelmonmod.pixelmon.listener.EntityPlayerExtension
+[21fev.2025 01:18:53.411] [Server thread/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class net.minecraft.world.entity.player.Player from class com.pixelmonmod.pixelmon.listener.EntityPlayerExtension
+[21fev.2025 01:18:53.411] [Server thread/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class net.minecraft.world.entity.player.Player from class com.pixelmonmod.pixelmon.listener.EntityPlayerExtension
+[21fev.2025 01:18:53.412] [Server thread/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class net.minecraft.world.entity.player.Player from class com.pixelmonmod.pixelmon.listener.EntityPlayerExtension
+[21fev.2025 01:18:53.412] [Server thread/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class net.minecraft.world.entity.player.Player from class com.pixelmonmod.pixelmon.listener.EntityPlayerExtension
+[21fev.2025 01:18:53.495] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 1073 ms
+[21fev.2025 01:18:53.495] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Done (1.799s)! For help, type "help"
+[21fev.2025 01:18:53.574] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
+[21fev.2025 01:18:53.620] [Server thread/INFO] [com.mangomilk.design_decor.DesignDecor/]: :3
+[21fev.2025 01:18:53.620] [Server thread/INFO] [com.drmangotea.tfmg.CreateTFMG/]: YEEEHAAW
+[21fev.2025 01:18:53.635] [Server thread/INFO] [com.pixelmonmod.pixelmon.Pixelmon/]: Datapacks found: vanilla,mod:forge,mod:kuma_api,mod:terrablender,mod:mousetweaks,mod:ftbessentials,mod:biomesoplenty,mod:jade,mod:createdeco,mod:copycats,mod:botarium,mod:clientresetpacket,mod:create_sabers,mod:sophisticatedcore,mod:create_crush_everything,mod:flywheel,mod:create,mod:waystones,mod:clumps,mod:journeymap,mod:modernfix,mod:jei,mod:botanypotspixelmon,mod:create_waystones_recipes,mod:botanypots,mod:mixinextras,mod:ftbultimine,mod:design_decor,mod:bookshelf,mod:create_extra_casing,mod:create_better_motors,mod:sophisticatedbackpacks,mod:extendedgears,mod:architectury,mod:ftblibrary,mod:ferritecore,mod:railways,mod:balm,mod:ftbteams,mod:ftbchunks,mod:tfmg,mod:createaddition,mod:pixelmon,mod:pixelmonfactory
+[21fev.2025 01:18:53.638] [Server thread/WARN] [ModernFix/]: Dedicated server took 26.512 seconds to load
+[21fev.2025 01:18:53.863] [Server thread/WARN] [net.minecraftforge.eventbus.EventBus/EVENTBUS]: Attempting to add a Lambda listener with computed generic type of Event. Are you sure this is what you meant? NOTE : there are complex lambda forms where the generic type information is erased and cannot be recovered at runtime.
+[21fev.2025 01:20:03.801] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping the server
+[21fev.2025 01:20:03.840] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[21fev.2025 01:20:03.842] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[21fev.2025 01:20:03.842] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[21fev.2025 01:20:03.931] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[21fev.2025 01:20:04.060] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[21fev.2025 01:20:04.061] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[21fev.2025 01:20:04.063] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/pixelmon:ultra_space
+[21fev.2025 01:20:04.105] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[21fev.2025 01:20:04.105] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[21fev.2025 01:20:04.105] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[21fev.2025 01:20:04.105] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (ultra_space): All chunks are saved
+[21fev.2025 01:20:04.105] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[21fev.2025 01:20:04.121] [Server thread/INFO] [journeymap/]: Loading JourneyMap Forge Configs
