@@ -1,0 +1,22 @@
+{
+  "id": "-735-278_-735-71-278",
+  "name": "-735, 278",
+  "icon": "journeymap:ui/img/waypoint-icon.png",
+  "colorizedIcon": "fake:color--6171075-waypoint-icon.png",
+  "x": -735,
+  "y": 71,
+  "z": 278,
+  "r": 161,
+  "g": 214,
+  "b": 61,
+  "enable": true,
+  "type": "Normal",
+  "origin": "journeymap",
+  "dimensions": [
+    "pixelmon:ultra_space"
+  ],
+  "persistent": true,
+  "showDeviation": false,
+  "iconColor": -1,
+  "customIconColor": false
+}
