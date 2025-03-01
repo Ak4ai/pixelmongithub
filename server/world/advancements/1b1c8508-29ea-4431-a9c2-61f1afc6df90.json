@@ -1,4 +1,94 @@
 {
+  "sophisticatedbackpacks:recipes/sophisticatedbackpacks/blasting_upgrade": {
+    "criteria": {
+      "has_upgrade_base": "2025-03-01 16:04:32 -0300"
+    },
+    "done": true
+  },
+  "sophisticatedbackpacks:recipes/sophisticatedbackpacks/smoking_upgrade_from_smelting_upgrade": {
+    "criteria": {
+      "has_smelting_upgrade": "2025-03-01 16:04:32 -0300"
+    },
+    "done": true
+  },
+  "create:root": {
+    "criteria": {
+      "0": "2025-03-01 16:04:32 -0300"
+    },
+    "done": true
+  },
+  "sophisticatedbackpacks:recipes/sophisticatedbackpacks/auto_smoking_upgrade": {
+    "criteria": {
+      "has_smoking_upgrade": "2025-03-01 16:04:32 -0300"
+    },
+    "done": true
+  },
+  "pixelmon:recipes/pokeball/base/aluminum_base": {
+    "criteria": {
+      "has_ingot": "2025-03-01 16:04:32 -0300"
+    },
+    "done": true
+  },
+  "pixelmon:recipes/pokeball/base/silver_base": {
+    "criteria": {
+      "has_ingot": "2025-03-01 16:04:32 -0300"
+    },
+    "done": true
+  },
+  "sophisticatedbackpacks:recipes/sophisticatedbackpacks/auto_smoking_upgrade_from_auto_smelting_upgrade": {
+    "criteria": {
+      "has_auto_smelting_upgrade": "2025-03-01 16:04:32 -0300"
+    },
+    "done": true
+  },
+  "pixelmon:ultra_space/ultra_forest_sleep": {
+    "criteria": {
+      "ultra_forest_sleep": "2025-03-01 16:22:46 -0300"
+    },
+    "done": true
+  },
+  "pixelmon:recipes/pokeball/base/iron_base": {
+    "criteria": {
+      "has_ingot": "2025-03-01 16:04:32 -0300"
+    },
+    "done": true
+  },
+  "pixelmon:recipes/pokeball/base/platinum_base": {
+    "criteria": {
+      "has_ingot": "2025-03-01 16:04:32 -0300"
+    },
+    "done": true
+  },
+  "sophisticatedbackpacks:recipes/sophisticatedbackpacks/smoking_upgrade": {
+    "criteria": {
+      "has_upgrade_base": "2025-03-01 16:04:32 -0300"
+    },
+    "done": true
+  },
+  "pixelmon:recipes/pokeball/base/wooden_base": {
+    "criteria": {
+      "has_slab": "2025-03-01 16:04:32 -0300"
+    },
+    "done": true
+  },
+  "sophisticatedbackpacks:recipes/sophisticatedbackpacks/auto_blasting_upgrade": {
+    "criteria": {
+      "has_blasting_upgrade": "2025-03-01 16:04:32 -0300"
+    },
+    "done": true
+  },
+  "sophisticatedbackpacks:recipes/sophisticatedbackpacks/blasting_upgrade_from_smelting_upgrade": {
+    "criteria": {
+      "has_smelting_upgrade": "2025-03-01 16:04:32 -0300"
+    },
+    "done": true
+  },
+  "sophisticatedbackpacks:recipes/sophisticatedbackpacks/auto_blasting_upgrade_from_auto_smelting_upgrade": {
+    "criteria": {
+      "has_auto_smelting_upgrade": "2025-03-01 16:04:32 -0300"
+    },
+    "done": true
+  },
   "pixelmon:pokedex/pokedex_trigger": {
     "criteria": {
       "pokedex_base": "2025-03-01 02:17:54 -0300"
@@ -8,9 +98,16 @@
   "minecraft:adventure/adventuring_time": {
     "criteria": {
       "minecraft:taiga": "2025-03-01 02:18:00 -0300",
+      "minecraft:beach": "2025-03-01 16:04:39 -0300",
       "minecraft:river": "2025-03-01 02:17:28 -0300"
     },
     "done": false
+  },
+  "pixelmon:ultra_space/root": {
+    "criteria": {
+      "entered_ultra_space": "2025-03-01 16:21:31 -0300"
+    },
+    "done": true
   },
   "DataVersion": 2586
 }

@@ -79,14 +79,13 @@ poke-loot:
     spawn-normal: true
     spawn-hidden: true
     spawn-grotto: true
-    spawn-rate: NORMAL
-    spawn-mode: FCFS
+    spawn-rate: MINIMAL
+    spawn-mode: PL
     loot-time: 24
 poke-stop:
     enabled: true
-    loot-time: 24
-always-aggressive-dimensions:
+    loot-time: 124
+always-aggressive-dimensions: []
+horde-battle-dimensions: []
+spawning-disabled-dimensions:
 - pixelmon:ultra_space
-horde-battle-dimensions:
-- pixelmon:ultra_space
-spawning-disabled-dimensions: []
