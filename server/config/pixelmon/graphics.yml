@@ -1,12 +1,14 @@
-# © PixelmonMod 2012-2024
-
 render-distance-weight: 2.0
 name-plate-range: 1
 render-wild-levels: true
 show-wild-names: true
 scale-models-up: true
+use-smooth-shading-on-poke-balls: true
+enable-smooth-pokemon-shading: true
 show-current-attack-target: true
 draw-health-bars: false
+use-battle-camera: true
+player-control-camera: true
 only-show-attack-effects-to-battlers: false
 advanced-battle-information: true
 range-to-display-attack-animations: 40
@@ -14,18 +16,11 @@ emissive-textures: true
 emissive-textures-distance: 32
 poke-balls3-d-in-hand: false
 global-wire-frame: false
-show-bones: false
 global-animation-toggle: true
 global-vertex-toggle: false
 global-emissive-toggle: false
 global-sprite-toggle: false
 spectator-range-blocks: 10.0
 should-render-pokemon-outside-battle: false
-should-send-toasts: false
+should-send-toasts: true
 potion-particles-visible: true
-dropped-item-beams-enabled: true
-pokemon-editor-extra-color-mode-enabled: true
-use-smooth-shading-on-poke-balls: true
-enable-smooth-pokemon-shading: true
-use-battle-camera: true
-player-control-camera: true

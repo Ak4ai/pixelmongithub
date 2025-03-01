@@ -1,2 +1,0 @@
-minecraft:overworld
-pixelmon:ultra_space

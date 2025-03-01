@@ -6,23 +6,14 @@
 		1b1c8508-29ea-4431-a9c2-61f1afc6df90: "owner"
 	}
 	properties: {
-		"ftbteams:display_name": "Ak4ai"
-		"ftbteams:description": ""
-		"ftbteams:color": "#59FF67"
-		"ftbteams:free_to_join": 0b
-		"ftbteams:max_msg_history_size": 1000
 		"ftbchunks:allow_explosions": 0b
-		"ftbchunks:allow_mob_griefing": 0b
-		"ftbchunks:allow_fake_players": 0b
-		"ftbchunks:allow_named_fake_players": [ ]
-		"ftbchunks:allow_fake_players_by_id": 1b
-		"ftbchunks:allow_pvp": 1b
+		"ftbteams:display_name": "Ak4ai"
+		"ftbteams:color": "#89FF59"
 		"ftbchunks:block_edit_mode": "allies"
 		"ftbchunks:block_interact_mode": "allies"
-		"ftbchunks:entity_interact_mode": "allies"
-		"ftbchunks:nonliving_entity_attack_mode": "allies"
-		"ftbchunks:claim_visibility": "public"
-		"ftbchunks:location_mode": "allies"
+		"ftbteams:description": ""
+		"ftbteams:free_to_join": 0b
+		"ftbchunks:allow_fake_players": 1b
 	}
 	message_history: [ ]
 	extra: { }

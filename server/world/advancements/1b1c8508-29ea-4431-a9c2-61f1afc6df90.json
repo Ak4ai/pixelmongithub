@@ -1,21 +1,16 @@
 {
-  "minecraft:recipes/decorations/crafting_table": {
+  "pixelmon:pokedex/pokedex_trigger": {
     "criteria": {
-      "unlock_right_away": "2025-02-21 04:36:10 +0000"
+      "pokedex_base": "2025-03-01 02:17:54 -0300"
     },
     "done": true
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
-      "minecraft:desert": "2025-02-21 04:36:10 +0000"
+      "minecraft:taiga": "2025-03-01 02:18:00 -0300",
+      "minecraft:river": "2025-03-01 02:17:28 -0300"
     },
     "done": false
   },
-  "pixelmon:pokedex/pokedex_trigger": {
-    "criteria": {
-      "pokedex_base": "2025-02-21 04:39:23 +0000"
-    },
-    "done": true
-  },
-  "DataVersion": 3465
+  "DataVersion": 2586
 }

@@ -1,0 +1,20 @@
+trust-limit: 15
+protected-time: 300
+location-time: 600
+base-chance: 10.0
+step-spawn-chance: 5.0
+max-players-i-p: 0
+random-time-spawn-min: 0
+random-time-spawn-max: 300
+particle-name: dragon_breath
+notify-legendary-spawn: true
+legendary-repeat: true
+legendary-particle: true
+blacklist-legendary: false
+blacklist-legendary-list:
+- Regieleki
+- Regidrago
+blacklist-dimensions: false
+blacklist-dimension-list:
+- the_nether
+- the_end

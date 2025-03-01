@@ -1,0 +1,15 @@
+{
+  "prefixNeutral": "&0[&#@55FFFF-00AAAARaidRecolor&0]&7 ",
+  "prefixPositive": "&0[&#@55FFFF-00AAAARaidRecolor&0]&a ",
+  "prefixNegative": "&0[&#@55FFFF-00AAAARaidRecolor&0]&c ",
+  "noPerms": "You don't have permission!",
+  "invalidArgs": "Invalid args!",
+  "reload": "Reloaded configuration.",
+  "reset": "Reset den colors to the default values.",
+  "update": "Updated all found dens.",
+  "set": "&7Set all dens' %1 to the color %2%3&7.",
+  "beam": "beam color",
+  "primary": "primary UI color",
+  "secondary": "secondary UI color",
+  "tertiary": "tertiary UI color"
+}

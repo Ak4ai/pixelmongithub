@@ -1,5 +1,3 @@
-# © PixelmonMod 2012-2024
-
 battle-a-i-wild: RANDOM
 battle-a-i-boss: AGGRESSIVE
 battle-a-i-trainer: TACTICAL
@@ -55,9 +53,3 @@ overworld-weather-affects-trainer-battle-weather: true
 overworld-weather-affects-pv-p-battle-weather: false
 overworld-weather-affects-raid-battle-weather: false
 overworld-weather-can-change-battle-weather-during-battle: true
-players-can-move-during-pv-p-battles: true
-players-can-move-during-wild-battles: true
-players-can-move-during-trainer-battles: true
-players-can-move-during-raid-battles: false
-max-distance-players-can-move-away-from-battles: 30
-min-distance-before-warning-vignette: 20

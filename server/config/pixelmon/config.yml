@@ -1,36 +1,13 @@
-# © PixelmonMod 2012-2024
-
-allow-pokemon-nicknames: true
-allow-planting: true
-cloning-machine-enabled: true
-lake-trio-max-enchants: 3
-use-system-time-for-world-time: false
-time-update-interval: 30
-max-level: 250
-always-have-mega-ring: false
-always-have-dynamax-band: false
-chance-to-get-special-bidoof: 30
-fallback-capture-method: gen8
-hammer-durability-loss-multiplier: 3
-old-gen-dimensions: []
-both-gen-dimensions:
-- pixelmon:ultra_space
-- pixelmon:drowned
-- minecraft:overworld
-- minecraft:the_nether
-- minecraft:the_end
-dynamax-size: 15.0
-berry-juice-crafting: true
-poke-gift-reusable: false
-elevator-search-range: 10
-starter-on-join: true
-use-discord-rich-presence: true
-growth-scale-modifier: 1.0
 starting-balance: 0.0
 award-tokens: false
+allow-pokemon-nicknames: true
 allow-vanilla-mobs: false
 allow-capture-outside-battle: true
 allow-random-pokemon-to-be-legendary: true
+growth-scale-modifier: 1.0
+allow-planting: true
+cloning-machine-enabled: true
+lake-trio-max-enchants: 3
 engage-player-by-poke-ball: true
 enable-wild-aggression: true
 shrine-encounter-mode: Once
@@ -39,15 +16,23 @@ npc-editor-op-only: true
 quest-editor-op-only: true
 traders-reusable: false
 moves-per-tutor: 20
+use-system-time-for-world-time: false
+time-update-interval: 30
 allow-pokemon-editors: true
 allow-chisels: true
+max-level: 100
 can-pokemon-be-hit: false
+always-have-mega-ring: false
+always-have-dynamax-band: false
+chance-to-get-special-bidoof: 30
 disabled-non-player-movement: false
+fallback-capture-method: gen8
 allow-shiny-charm-from-pokedex: true
 allow-oval-charm-from-pokedex: true
 exp-charm-multiplier: 1.5
 catching-charm-multiplier: 1.1
 mark-charm-rolls: 3
+hammer-durability-loss-multiplier: 3
 ore-colors:
     '11':
         block-id: pixelmon:sapphire_ore
@@ -135,7 +120,20 @@ ore-colors:
         pattern: 0
 average-lure-expiry-ticks: 17920
 limit-shop-keeper-stack-size: true
+old-gen-dimensions: []
+both-gen-dimensions:
+- pixelmon:ultra_space
+- pixelmon:drowned
+- minecraft:overworld
+- minecraft:the_nether
+- minecraft:the_end
+dynamax-size: 15.0
 allow-illegal-shinies: true
+berry-juice-crafting: true
+poke-gift-reusable: false
+elevator-search-range: 10
+starter-on-join: true
+use-discord-rich-presence: true
 debug:
     print-errors: true
     use-update-entity-with-optional-force-fix: false

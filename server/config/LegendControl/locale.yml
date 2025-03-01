@@ -1,0 +1,26 @@
+messages:
+    reload: '&e(!) Configs have been reloaded.'
+    add-trust: '&e(!) Player %player% has been successfully added to your trust list.'
+    remove-trust: '&e(!) Player %player% has been removed from your trust list.'
+    remove-all-trust: '&e(!) All players have been removed from your trust list.'
+    empty-trust: '&e(!) Your trust list is empty.'
+    list-trust: '&e&lTrust list:'
+    incorrect-cause: '&e(!) At the moment, the legendary Pokemon is protected. Try
+        to enter the battle after a while.'
+    protection: '&e(!) Pokemon %pokemon%''s protection has expired.'
+    location: '&e(!) Location of Pokemon %pokemon%: X: %x%, Y: %y%, Z: %z%.'
+    spawn-player-legendary: '&e(!) A legendary Pokemon has appeared near you!'
+    check-legendary: '&e(!) Chance %chance%, legendary Pokemon will appear in ~%time%.'
+    change-chance-legendary: '&e(!) New chance: %chance%.'
+    cant-self-trust: '&c(!) You cannot add yourself to the trust list.'
+    already-trusted: '&c(!) This player is already on your trust list.'
+    not-player-trust: '&c(!) This player is not yet on your trust list.'
+    trust-limit: '&c(!) You have reached the maximum number of players on the trust
+        list.'
+    error-chance: '&c(!) The overall chance should not be less than 0% or greater
+        than 100%.'
+    player-not-found: '&c(!) Player %player% not found.'
+    list-player: '&e- %player%'
+    seconds: ' seconds'
+    minutes: ' minutes'
+    hours: ' hours'

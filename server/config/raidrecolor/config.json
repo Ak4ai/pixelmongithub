@@ -1,0 +1,30 @@
+{
+  "beamColor": {
+    "r": 255,
+    "g": 36,
+    "b": 134,
+    "a": 255
+  },
+  "uiColorPrimary": {
+    "r": 255,
+    "g": 108,
+    "b": 92,
+    "a": 255
+  },
+  "uiColorSecondary": {
+    "r": 168,
+    "g": 59,
+    "b": 57,
+    "a": 255
+  },
+  "uiColorTertiary": {
+    "r": 204,
+    "g": 0,
+    "b": 0,
+    "a": 51
+  },
+  "command": "raidrecolor",
+  "aliases": [
+    "rrc"
+  ]
+}
